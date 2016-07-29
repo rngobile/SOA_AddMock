@@ -28,8 +28,8 @@
             <configuration>
               <target>
                 <property name="scac.input" value="${basedir}/composite.xml" />
-                <ant antfile="/home/mark/Oracle/Middleware/Oracle_SOA1/bin/ant-sca-compile.xml"
-                     dir="/home/mark/Oracle/Middleware/Oracle_SOA1/bin"
+                <ant antfile="/oracle/fmwhome/Oracle_SOA1/bin/ant-sca-compile.xml"
+                     dir="/oracle/fmwhome/Oracle_SOA1/bin"
                      target="scac" />
               </target>
             </configuration>
@@ -46,8 +46,8 @@
                 <property name="compositeName" value="${project.artifactId}" />
                 <property name="compositeDir" value="${basedir}" />
                 <property name="revision" value="${project.version}" />
-                <ant antfile="/home/mark/Oracle/Middleware/Oracle_SOA1/bin/ant-sca-package.xml"
-                     dir="/home/mark/Oracle/Middleware/Oracle_SOA1/bin"
+                <ant antfile="/oracle/fmwhome/Oracle_SOA1/bin/ant-sca-package.xml"
+                     dir="/oracle/fmwhome/Oracle_SOA1/bin"
                      target="package" />
               </target>
             </configuration>
@@ -67,8 +67,8 @@
                 <property name="overwrite" value="true" />
                 <property name="forceDefault" value="true" />
                 <property name="partition" value="default" />
-                <ant antfile="/home/mark/Oracle/Middleware/Oracle_SOA1/bin/ant-sca-deploy.xml"
-                     dir="/home/mark/Oracle/Middleware/Oracle_SOA1/bin"
+                <ant antfile="/oracle/fmwhome/Oracle_SOA1/bin/ant-sca-deploy.xml"
+                     dir="/oracle/fmwhome/Oracle_SOA1/bin"
                      target="deploy" />
               </target>
             </configuration>
