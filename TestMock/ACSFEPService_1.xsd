@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ACSFEPInterface" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/ACSFEPInterface">
+   <xs:complexType name="ACSFEPExceptions">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="Exceptions" nillable="true" type="tns:ArrayOfACSFEPException"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="ACSFEPExceptions" nillable="true" type="tns:ACSFEPExceptions"/>
+   <xs:complexType name="ArrayOfACSFEPException">
+      <xs:sequence>
+         <xs:element minOccurs="0" maxOccurs="unbounded" name="ACSFEPException" nillable="true" type="tns:ACSFEPException"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="ArrayOfACSFEPException" nillable="true" type="tns:ArrayOfACSFEPException"/>
+   <xs:complexType name="ACSFEPException">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string"/>
+         <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:element name="ACSFEPException" nillable="true" type="tns:ACSFEPException"/>
+</xs:schema>
