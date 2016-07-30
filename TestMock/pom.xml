@@ -30,9 +30,9 @@
               <goal>read-project-properties</goal>
             </goals>
             <configuration>
-              <file>
+              <files>
                 <file>config.properties</file>
-              </file>
+              </files>
             </configuration>
           </execution>
         </executions>
