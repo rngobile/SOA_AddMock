@@ -86,13 +86,13 @@
     <repository>
       <id>local</id>
       <name>local repository</name>
-      <url>file:///home/mark/.m2/repository</url>
+      <url>file:///home/jenkins/.m2/repository</url>
     </repository>
     <!-- use the following if you ARE using a snapshot version. -->
     <snapshotRepository>
       <id>localSnapshot</id>
       <name>local snapshot repository</name>
-      <url>file:///home/mark/.m2/repository</url>
+      <url>file:///home/jenkins/.m2/repository</url>
     </snapshotRepository>
   </distributionManagement>
 
