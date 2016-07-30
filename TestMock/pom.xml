@@ -79,7 +79,7 @@
             <phase>deploy</phase>
             <configuration>
               <target>
-                <property name="serverURL" value="http://soaserver01:7001" />
+                <property name="serverURL" value="${wl.serverurl}" />
                 <property name="user" value="${wl.username}" />
                 <property name="password" value="${wl.password}" />
                 <property name="sarLocation" value="${basedir}/deploy/sca_${project.artifactId}_rev${project.version}.jar" />
