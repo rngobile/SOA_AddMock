@@ -103,7 +103,7 @@
   <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
-      <id>local</id>
+      <id>maven_local</id>
       <name>local repository</name>
       <url>file:///home/jenkins/.m2/repository</url>
     </repository>
